@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Tambahkan ini */
+@layer base {
+  body {
+    @apply bg-[#0f0f0f] text-white;
+  }
+}
+:root {
+  --swiper-theme-color: #eab308; /* Warna yellow-500 Tailwind */
+  --swiper-navigation-size: 25px;
+}
+
+/* Biar panahnya lebih elegan */
+.swiper-button-next, .swiper-button-prev {
+  background: rgba(0,0,0,0.5);
+  padding: 30px;
+  border-radius: 50%;
+  backdrop-filter: blur(4px);
+}
